@@ -2,7 +2,7 @@ FROM ubuntu:latest AS build
 LABEL authors="rafael"
 
 RUN apt-get update
-RUN apt-get install openjdk-17-openjdk -y
+RUN apt-get install -y openjdk-17
 
 COPY . .
 
